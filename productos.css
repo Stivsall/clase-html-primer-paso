@@ -1,13 +1,21 @@
 header{
     background: #CCCCCC;
+    padding: 20px 0;
 }
 .cajaProductos{
+    /*width no da en ancho total del logo y la barra de navegación*/
     width: 940px;
+    /* la posicion relativa acomoda el ancho en la pantalla y lo alinia a la izquierda*/
     position: relative;
+    /*el margen trabaja con los dos atributos anteriores para de medir el espacio que hay
+    en total lo divide y centra nuestro banner la primeta posicioón indica margenes arriba-abajo
+    mientras la segunda son los de derecha-izquierda*/
     margin: 0 auto;
 }
 nav{
+    /* la posicion con atributo absoluto no alinia la barra de navegacion a un extremo*/
     position: absolute;
+    /*con top y right contralamos modificamos el valor absoluto que dimos anteriormente*/
     top: 120px;
     right: 0;
 }
@@ -25,4 +33,37 @@ nav a {
     font-size: 30px;
     font-weight: bold;
 
+}
+.productos {
+    width: 940px;
+    margin: 50px auto;
+    
+
+}
+.productos li{
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    /*border resive los atributos directo 1 el tamaño de borde, 2 estilo, 3 color*/
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos-descripcion{
+    font-size: 18px;
+}
+
+.productos-valor{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
 }
