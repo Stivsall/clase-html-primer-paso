@@ -1,41 +1,99 @@
-.titulo-principal{
-    padding-left: 15%;   
-}
-#banner{
-    width: 100%;
-}
-.principal{
+header{
     background: #CCCCCC;
-    padding: 20px;
+    padding: 20px 0;
 }
-.titulo-centro{
-    text-align: center;
+.cajaProductos{
+    /*width no da en ancho total del logo y la barra de navegación*/
+    width: 940px;
+    /* la posicion relativa acomoda el ancho en la pantalla y lo alinia a la izquierda*/
+    position: relative;
+    /*el margen trabaja con los dos atributos anteriores para de medir el espacio que hay
+    en total lo divide y centra nuestro banner la primeta posicioón indica margenes arriba-abajo
+    mientras la segunda son los de derecha-izquierda*/
+    margin: 0 auto;
 }
-p{
-    text-align: center; background: #CCCCCC;
+nav{
+    /* la posicion con atributo absoluto no alinia la barra de navegacion a un extremo*/
+    position: absolute;
+    /*con top y right contralamos modificamos el valor absoluto que dimos anteriormente*/
+    top: 120px;
+    right: 0;
 }
 
-em strong{
-    color: red;
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+/* 1° "0" margen arriba , 2° "0" derecha, 3° "abajo", 4° "0" izquierda*/    
 }
 
-#mision{
-    font-size: 20px;
-}
-.diferenciales{
-    background: #FFFFFF;
-    padding: 30px;
+nav a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+
 }
 
-.items{
-    font-style: italic;
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
 }
-ul{
+
+.productos {
+    width: 940px;
+    margin: 50px auto;
+}
+
+.productos li{
     display: inline-block;
+    width: 30%;
+    text-align: center;
     vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    /*border resive los atributos directo 1 el tamaño de borde, 2 estilo, 3 color*/
+    border: 2px solid #000000;
+    border-radius: 10px;
 }
-.imagenDiferenciales{
-    width: 50%;
+
+.productos li:hover {
+    border-color: #c78c19;
+}
+
+.productos li:active{
+    border-color: #088c19;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+/* no es igula li h2: hover que li:hover h2*/
+/*de la primera forma afecta solo cuando pasa el mouse por encima del encabezado h2 */
+/*de la segunda afecta a toda la lista */
+.productos li:hover h2{
+    font-size: 33px;
+}
+
+.productos-descripcion{
+    font-size: 18px;
+}
+
+.productos-valor{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+.copy{
+    color: white;
+    font-size: 18px;
+    padding: 20px;
 }
