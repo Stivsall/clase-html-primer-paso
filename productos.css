@@ -43,20 +43,6 @@ nav a:hover{
 .productos {
     width: 940px;
     margin: 50px auto;
-    
-
-}
-
-.productos li:hover {
-    border-color: #c78c19;
-}
-
-.productos li:active{
-    border-color: #088c19;
-}
-
-.productos li h2:hover{
-    font-size: 33px;
 }
 
 .productos li{
@@ -72,9 +58,23 @@ nav a:hover{
     border-radius: 10px;
 }
 
+.productos li:hover {
+    border-color: #c78c19;
+}
+
+.productos li:active{
+    border-color: #088c19;
+}
+
 .productos h2{
     font-size: 30px;
     font-weight: bold;
+}
+/* no es igula li h2: hover que li:hover h2*/
+/*de la primera forma afecta solo cuando pasa el mouse por encima del encabezado h2 */
+/*de la segunda afecta a toda la lista */
+.productos li:hover h2{
+    font-size: 33px;
 }
 
 .productos-descripcion{
@@ -85,4 +85,15 @@ nav a:hover{
     font-size: 22px;
     font-weight: bold;
     margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+.copy{
+    color: white;
+    font-size: 18px;
+    padding: 20px;
 }
