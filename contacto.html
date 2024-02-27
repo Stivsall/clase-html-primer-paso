@@ -23,16 +23,40 @@
         
     </header>
     <main>
-        <label for="nombreApellido">Nombre y Apellido</label>
-        <input type="text" id="nombreApellido">
+        <form action="">
+            <label for="nombreApellido">Nombre y Apellido</label>
+            <input type="text" id="nombreApellido" class="input-padron">
 
-        <label for="correoElectronico">Correo Electrónico</label>
-        <input type="text" id="correoElectronico">
+            <label for="correoElectronico">Correo Electrónico</label>
+            <input type="text" id="correoElectronico" class="input-padron">
 
-        <label for="celular">Celular</label>
-        <input type="text" id="celular">
+            <label for="celular">Celular</label>
+            <input type="text" id="celular" class="input-padron">
 
-        <input type="submit" value="Enviar Formulario">
+            <label for="mensaje">Mensaje</label>
+            <textarea  id="mensaje" cols="70" rows="10" class="input-padron"></textarea>
+            
+            <div>
+                <p>¿Cómo le gustaría que lo contactemos?</p>
+                <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                <label for="radio-celular"><input type="radio" name="contacto" value="email" id="radio-celular">Celular</label>
+             
+                <label for="radio-whatapp"><input type="radio" name="contacto" value="email" id="radio-whatapp">WhatApp</label>
+                
+            </div>
+
+            <div>
+                <p>¿En qué horario prefiere ser atendido?</p>
+                <select name="" id="">
+                    <option value="">Mañana</option>
+                    <option value="">Tarde</option>
+                    <option value="">Noche</option>
+                </select>
+            </div>
+            
+            <label for="novedad"><input type="checkbox" class="checkbox" id="novedad">¿Le gustaría recibir novedades de la Barbería Alura?</label>
+            <input type="submit" value="Enviar Formulario">
+        </form>
     </main>
     <footer>
         <img src="imagenes/logo-blanco.png" alt="">
