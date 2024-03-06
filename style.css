@@ -1,10 +1,12 @@
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
 header{
     background: #CCCCCC;
     padding: 20px 0;
 }
-body{
-    font-family: "Montserrat", sans-serif;
-}
+
 .cajaProductos{
     /*width no da en ancho total del logo y la barra de navegación*/
     width: 940px;
@@ -124,7 +126,7 @@ form label, form legend{
 }
 
 .enviar:hover{
-    background: #0033FF;
+    background: #7991f0;
     transform: scale(1.2);
 }
 
@@ -173,6 +175,7 @@ footer{
     margin: 0 0 1em;
     text-align: center;
     clear: left;
+    color: rgba(0,0,0,2);
 }
 
 .principal p{
@@ -186,6 +189,7 @@ footer{
 .principal em{
     font-style: italic;
 }
+
 .utencilios{
     width: 120px;
     float: left;
@@ -216,9 +220,13 @@ footer{
 
 .imagen-diferenciales{
     width: 60%;
-    
+    transition: 400ms;
+    box-shadow: 10px 10px 20px 10px black;
 }
 
+.imagen-diferenciales:hover{
+    opacity: 0.3;
+}
 .contenido-diferenciales{
     width: 640px;
     margin: 0 auto;
@@ -236,6 +244,10 @@ footer{
 
 .items:first-child{
     font-weight: bold;
+}
+
+.items:before{
+    content: "✦ ";
 }
 
 .video{
